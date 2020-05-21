@@ -1,0 +1,25 @@
+# env vars for docker-compose 
+POSTGRESQL_DATA_LOCAL_VOLUME=/DEVBOX/Workspace/docker/volumes/postgres/
+
+# POSTGRES ENGING SETUPS
+POSTGRES_USER=docker
+POSTGRES_PASSWORD=docker
+POSTGRES_DB=postgres
+
+# GO BACKEND LIVE ENV VARs
+API_SECRET=6b38d4ec1694542d82403d5f10052e32 #Used when creating a JWT. It can be anything
+DB_HOST=127.0.0.1
+DB_DRIVER=postgres
+DB_USER=docker
+DB_PASSWORD=docker
+DB_NAME=backend_go_api
+DB_PORT=5432 #Default postgres port
+
+# GO BACKEND TEST ENV VARs
+TestApiSecret=6b38d4ec1694542d82403d5f10052e32
+TestDbHost=127.0.0.1
+TestDbDriver=postgres
+TestDbUser=docker
+TestDbPassword=docker
+TestDbName=backend_go_api_test
+TestDbPort=5432%
